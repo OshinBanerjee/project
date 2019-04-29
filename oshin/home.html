@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BATCH DETAILS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.8/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.8/js/bootstrap-select.min.js"></script>
+      <script src="js/Home_function.js"></script>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+   <div class="container-fluid">
+     <form action="#" novalidate class="form-inline row">
+       <div class="form-group col-lg-6" id="hgid1">
+								<label for="servName" id="sName">Server Name</label>
+								<input type="text" class="form-control" id="servName" pattern="[a-zA-Z].*" minlength="8" placeholder="Enter Server Name" required minlength="5" maxlength="10"  onblur="showError(this.id,'sName')" >
+							</div>
+              
+              <div class="form-group col-lg-6" id="hgid2">
+                <label for="givDate" id="gdate">Date</label>
+                <input type="date" class="form-control" id="givDate" onblur="showError(this.id,'gDate')">
+              </div>
+              </form>
+              <h1 class="heading">DASHBOARD</h1>
+              <table class="table table-lg table-responsive-md">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Job ID</th>
+                    <th>Job Name</th>
+                    <th>Server</th>
+                    <th>Status</th>
+                    <th>Log</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th><a href="#">AED101</a></th>
+                    <th>EMP_PAY</th>
+                    <th>Server1</th>
+                    <th class="Completed">Completed</th>
+                    <th><a href="#">EPay_File.txt<a></th>
+                  </tr>
+                  <tr>
+                    <th><a href="#">EAT003</a></th>
+                    <th>EMP_ATTEND</th>
+                    <th>Server2</th>
+                    <th class="Failed">Failed</th>
+                    <th><a href="#">EAtd_Log.txt</a></th>
+                  </tr>
+                  <tr>
+                    <th><a href="#">ADD789</a></th>
+                    <th>EMP_ADD</th>
+                    <th>Server3</th>
+                    <th class="Time_Exceeded">Time Exceeded</th>
+                    <th><a href="#">add-local.txt</a></th>
+                  </tr>
+                  <tr>
+                    <th><a href="#">DEL167</a></th>
+                    <th>EMP_DEL</th>
+                    <th>Server4</th>
+                    <th class="Active">Active</th>
+                    <th><a href="#">emp-del.txt</a></th>
+                  </tr>
+                </tbody>
+              </table>
+   </div>
+</body>
+</html>

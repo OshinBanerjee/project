@@ -1,0 +1,22 @@
+.form-inline{
+    padding:20px;
+    background-color: bisque;
+    font-weight: bolder;
+}
+.heading{
+    text-align: center;
+    padding-top:30px; 
+    font-weight: bolder;
+}
+.Completed{
+    color: green;
+}
+.Failed{
+    color: red;
+}
+.Time_Exceeded{
+    color: orange;
+}
+.Active{
+    color: blue;
+}
